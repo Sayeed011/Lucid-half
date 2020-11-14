@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 45%;
+    background-color: #008ed6;
+    width: 0%;
+    transition: .5s all ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 45%;
+    background-color: #008ed6;
+    width: 0%;
+    transition: .5s all ease-in-out;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 10px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 45%;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+    width: 45%;
+}
+.header-content{
+
+}
+.header-content h5{
+    font-size: 16px;
+    color: #008ed6;
+
+}
+.header-content h1{
+    font-size: 40px;
+    color: #fff;
+}
+.header-content p{
+    color: #999;
+}
+.hg{
+    min-height: 95vh;
+}
+.download,.view{
+    border: 1px solid #999 ;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.download:hover{
+    color: #fff;
+    background-color:#008ed6;
+    border-color: 1px solid #008ed6;
+}
+.view:hover{
+    color: #fff;
+    background-color:#008ed6;
+    border-color: 1px solid #008ed6;
+}
+.text-align{
+    text-align: center;
+}
